@@ -15,6 +15,9 @@ module Projects
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
+    # config.active_record.sqlite3.represent_boolean_as_integer = true
+    Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true
+
     config.generators do |g|
       g.test_framework :rspec,
         view_specs: false,
